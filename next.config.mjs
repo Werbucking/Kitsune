@@ -4,6 +4,10 @@ import withPWA from "next-pwa";
 const nextConfig = {
   output: "standalone",
   reactStrictMode: true,
+  swcMinify: true,
+  experimental: {
+    optimizePackageImports: ['lucide-react', '@radix-ui/react-icons']
+  },
   images: {
     remotePatterns: [
       {
